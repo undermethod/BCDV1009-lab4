@@ -16,7 +16,7 @@ const Form = (props) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form tasks={task} addTask={addTask} onSubmit={handleSubmit}>
             <h2>
                 <label
                     htmlFor="new-todo-input"
@@ -25,6 +25,7 @@ const Form = (props) => {
                     What needs to be done?
                 </label>
             </h2>
+            <List tasks={props.tasks} />
             <input
                 id="new-todo-input"
                 value={name}
