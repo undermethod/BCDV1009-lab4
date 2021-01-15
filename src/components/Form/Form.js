@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import List from "../List/List";
 
 const Form = (props) => {
     const [name, setName] = useState("");
@@ -16,7 +17,7 @@ const Form = (props) => {
     }
 
     return (
-        <form tasks={task} addTask={addTask} onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <h2>
                 <label
                     htmlFor="new-todo-input"

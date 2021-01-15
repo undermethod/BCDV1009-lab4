@@ -18,7 +18,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <Form addTask={addTask}/>
+      <Form tasks={task} addTask={addTask}/>
     </div>
   );
 }
